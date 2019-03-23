@@ -1,0 +1,20 @@
+{
+  "name": "system-ui.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gx src",
+    "build": "gx build src",
+    "icon": "npx repng src/logo/icon.js -w 640 -h 640 -d static -f icon.png",
+    "card": "npx repng src/logo/card.js -w 1280 -h 720 -d static -f card.png",
+    "test": "echo \"Beep boop\""
+  },
+  "keywords": [],
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gx": "^2.0.0-18",
+    "mdx-blocks": "0.0.13"
+  }
+}
