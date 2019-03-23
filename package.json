@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gx src",
-    "build": "gx build src",
+    "build": "gx build src && cp static/* public/",
     "icon": "npx repng src/logo/icon.js -w 640 -h 640 -d static -f icon.png",
     "card": "npx repng src/logo/card.js -w 1280 -h 720 -d static -f card.png",
     "test": "echo \"Beep boop\""
