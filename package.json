@@ -14,7 +14,7 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@system-ui/theme": "0.0.2",
+    "@system-ui/theme": "0.0.3",
     "gx": "^2.0.0-18",
     "is-absolute-url": "^2.1.0",
     "mdx-blocks": "0.0.13"
