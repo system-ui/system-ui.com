@@ -1,4 +1,3 @@
-import Logo from './logo'
 import { ThemeProvider, Styled } from 'theme-ui'
 
 export default props =>
@@ -6,9 +5,13 @@ export default props =>
     theme={{
       styles: {
         root: {
-          py: 7,
+          py: 6,
           color: 'white',
           bg: 'black',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
         },
       },
     }}>
@@ -33,7 +36,7 @@ export default Center.props({
 })
 -->
 
-<Logo />
+![logo](https://contrast.now.sh/000/fff?size=128&fontSize=2&text=UI)
 
 # System UI
 
