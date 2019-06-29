@@ -1,18 +1,40 @@
-import { Bar } from 'mdx-blocks'
-import Link from './link'
-export default Bar.props({
-  py: 3,
-  components: {
-    li: {
-      fontSize: 14,
-      fontWeight: 'bold',
-    },
-    a: Link,
-  }
-})
+import { ThemeProvider, Styled } from 'theme-ui'
 
-- [System UI](/)
+export default props =>
+  <ThemeProvider
+    theme={{
+      styles: {
+        ul: {
+          display: 'flex',
+          listStyle: 'none',
+          p: 0,
+          m: 0,
+          ml: 'auto',
+        },
+        p: {
+          m: 0,
+        },
+        a: {
+          display: 'inline-block',
+          fontSize: 14,
+          fontWeight: 'bold',
+          textDecoration: 'none',
+          color: 'inherit',
+          p: 2,
+        },
+        root: {
+          py: 3,
+          display: 'flex',
+        },
+      }
+    }}>
+    <Styled.root>
+      {props.children}
+    </Styled.root>
+  </ThemeProvider>
 
+
+[System UI](/)
 
 - [Theme Specification](/theme)
 - [GitHub](https://github.com/system-ui)

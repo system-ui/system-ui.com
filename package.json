@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gx src",
-    "build": "gx build src && cp static/* public/",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "icon": "npx repng src/logo/icon.js -w 640 -h 640 -d static -f icon.png",
     "card": "npx repng src/logo/card.js -w 1280 -h 720 -d static -f card.png",
     "test": "echo \"Beep boop\""
@@ -14,9 +14,21 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@mdx-js/mdx": "^1.0.21",
+    "@mdx-js/react": "^1.0.21",
     "@system-ui/theme": "0.0.3",
-    "gx": "^2.0.0-18",
+    "@theme-ui/presets": "^0.2.0",
+    "capture-website": "^0.4.0",
+    "gatsby": "^2.11.5",
+    "gatsby-plugin-catch-links": "^2.1.0",
+    "gatsby-plugin-mdx": "^1.0.6",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-theme-ui": "^0.2.0",
     "is-absolute-url": "^2.1.0",
-    "mdx-blocks": "0.0.13"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "theme-ui": "^0.2.0"
   }
 }
