@@ -7,7 +7,7 @@ export default props =>
   <React.Fragment>
     <Helmet>
       <title>System UI</title>
-      <link rel='icon' href='icon.png' />
+      <link rel='icon' href='favicon.png' />
       <meta name='description' content={pkg.description} />
       <meta name='twitter:card' content='summary' />
       <meta name='twitter:site' content='@jxnblk' />

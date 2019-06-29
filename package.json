@@ -6,8 +6,10 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "icon": "npx repng src/logo/icon.js -w 640 -h 640 -d static -f icon.png",
-    "card": "npx repng src/logo/card.js -w 1280 -h 720 -d static -f card.png",
+    "favicon": "capture-website 'https://contrast.now.sh/fff/000?size=32&fontSize=2&text=UI' --overwrite static/favicon.png",
+    "card": "capture-website 'https://contrast.now.sh/fff/000?width=640&height=360=16&fontSize=2&text=UI' --width=1280 --height=720 --overwrite static/favicon.png",
+    "__icon": "npx repng src/logo/icon.js -w 640 -h 640 -d static -f icon.png",
+    "__card": "npx repng src/logo/card.js -w 1280 -h 720 -d static -f card.png",
     "test": "echo \"Beep boop\""
   },
   "keywords": [],
@@ -20,6 +22,7 @@
     "@system-ui/theme": "0.0.4",
     "@theme-ui/presets": "^0.2.0",
     "capture-website": "^0.4.0",
+    "capture-website-cli": "^0.3.1",
     "deepmerge": "^3.3.0",
     "gatsby": "^2.11.5",
     "gatsby-plugin-catch-links": "^2.1.0",
