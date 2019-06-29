@@ -1,21 +1,26 @@
-import Logo from './logo'
-import { Center } from 'mdx-blocks'
+import { ThemeProvider, Styled } from 'theme-ui'
 
-export default Center.props({
-  py: 7,
-  color: 'white',
-  bg: 'black',
-  components: {
-    h1: {
-      fontSize: 2,
-      textTransform: 'uppercase',
-      letterSpacing: '0.3em',
-      marginRight: '-0.3em',
-    }
-  }
-})
+export default props =>
+  <ThemeProvider
+    theme={{
+      styles: {
+        root: {
+          py: 6,
+          color: 'white',
+          bg: 'black',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+      },
+    }}>
+    <Styled.root>
+      {props.children}
+    </Styled.root>
+  </ThemeProvider>
 
-<Logo />
+![logo](https://contrast.now.sh/000/fff?size=128&fontSize=2&text=UI)
 
 # System UI
 
